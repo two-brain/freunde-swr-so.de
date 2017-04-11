@@ -1,0 +1,85 @@
+$triangle-height: rem-calc(14);
+
+.site-header .row {
+  background: $white;
+}
+
+
+.logo {
+  display: table;
+  margin: rem-calc(24) auto;
+
+  @include breakpoint(medium up) {
+    margin: rem-calc(24 60);
+  }
+}
+
+.site-nav {
+  @include breakpoint(medium up) {
+    margin-right: $global-padding;
+    float: right;
+  }
+
+  @include breakpoint(xlarge up) {
+    margin-right: 5 * $global-padding;
+  }
+
+  a {
+    color: $dark-gray;
+    font-size: rem-calc(16);
+    text-transform: uppercase;
+
+    @include breakpoint(large up) {
+      font-size: rem-calc(12);
+    }
+
+    @include breakpoint(large up) {
+      font-size: rem-calc(14);
+    }
+  }
+
+  .first-level > li {
+    position: relative;
+
+    > a {
+      font-weight: 600;
+    }
+  }
+
+  .first-level > .active > a {
+    background: inherit;
+    color: inherit;
+
+    &::after {
+      border-left: $triangle-height solid transparent;
+      border-right: $triangle-height solid transparent;
+      border-top: $triangle-height solid $white;
+      bottom: -#{$triangle-height};
+      content: '';
+      height: 0;
+      left: 50%;
+      margin-left: -#{$triangle-height};
+      position: absolute;
+      top: auto;
+      width: 0;
+    }
+  }
+
+  .second-level {
+    @include breakpoint(medium up) {
+      text-align: left !important;
+    }
+    // @include breakpoint(large down) {
+    //   background: $white;
+    // }
+
+    // @include breakpoint(large up) {
+      padding-top: $triangle-height + 0.5rem;
+    // }
+
+    li:hover > a {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+}

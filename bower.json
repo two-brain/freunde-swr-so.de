@@ -1,0 +1,21 @@
+{
+  "name": "Freunde-SWR-SO",
+  "description": "website of Freunde & Förderer SWR SO",
+  "main": "Gulpfile.js",
+  "authors": [
+    "S1SYPHOS <hello@twobrain.io>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "SWR",
+    "Luova",
+    "JMK",
+    "two-brain"
+  ],
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "foundation-sites": "^6.3.1",
+    "motion-ui": "^1.2.2"
+  }
+}

@@ -1,0 +1,20 @@
+.PID-32 {
+  .page-content {
+    .csc-textpic-imagecolumn {
+      // margin-bottom: 8px !important;
+      margin-right: 0 !important;
+
+      a {
+        display: block;
+        transition: opacity 200ms;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  .page-sidebar img {
+    margin-top: 0.4rem;
+  }
+}

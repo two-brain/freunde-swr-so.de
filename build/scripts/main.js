@@ -1,0 +1,1 @@
+!function(e){function o(r){if(t[r])return t[r].exports;var n=t[r]={exports:{},id:r,loaded:!1};return e[r].call(n.exports,n,n.exports,o),n.loaded=!0,n.exports}var t={};o.m=e,o.c=t,o.p="",o(0)}([function(e,o,t){e.exports=t(1)},function(e,o){"use strict";$(".powermail_fieldset legend").remove(),$(document).foundation()}]);

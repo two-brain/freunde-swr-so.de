@@ -1,0 +1,35 @@
+.site-footer {
+  font-size: rem-calc(10);
+  text-transform: uppercase;
+
+  @include breakpoint(medium up) {
+    font-size: rem-calc(14);
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+}
+
+.footer-nav {
+  background: $white;
+
+  a {
+    color: $dark-gray;
+  }
+
+  li + li::before {
+    content: '|';
+    float: left;
+    position: relative;
+    bottom: -10px;
+    left: -1.5px;
+  }
+}
+
+[role=contentinfo] > div {
+  display: inline-block;
+  letter-spacing: 1px;
+  padding: 1rem 1rem 0;
+}

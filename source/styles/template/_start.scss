@@ -1,0 +1,149 @@
+.we-need-you {
+  padding: 3rem 1rem;
+
+  @include breakpoint(medium up) {
+    width: rem-calc(500);
+    position: relative;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+
+  @include breakpoint(large up) {
+    margin-left: rem-calc(460);
+
+  }
+
+  p {
+    font-size: rem-calc(20);
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include breakpoint(medium up) {
+      font-size: rem-calc(28);
+      padding-left: 2rem;
+      text-align: left;
+      border-left: 1px dashed $black;
+
+      &:before {
+        content: url('/fileadmin/template/assets/images/signet_swr.png');
+        position: absolute;
+        left: rem-calc(-72);
+        top: 50%;
+        margin-top: -20px;
+      }
+    }
+  }
+}
+
+.news-for-you {
+  height: 300px;
+
+  p,
+  a,
+  b,
+  h2 {
+    color: $white;
+  }
+
+  a {
+    transition: color 200ms;
+
+    &:hover,
+    &:focus {
+      color: darken($white, 10%);
+    }
+  }
+
+  h2 {
+    border-bottom: 1px dashed $dark-gray;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  > div {
+    background: #268bb5;
+    display: inline-block;
+    float: left;
+    height: inherit;
+
+    // image
+    &:first-child {
+      display: none;
+
+      @include breakpoint(large up) {
+        display: block;
+      }
+    }
+
+    // news boxes
+    &:not(:first-child) {
+      padding: rem-calc(40 24);
+      text-align: center;
+      width: 100%;
+
+      @include breakpoint(medium up) {
+        width: 50%;
+      }
+
+      @include breakpoint(large up) {
+        width: 100%;
+        max-width: rem-calc(274);
+        text-align: left;
+      }
+
+      @include breakpoint(xlarge up) {
+        max-width: rem-calc(360);
+      }
+    }
+
+    &:last-child {
+      background: #2eaadd;
+    }
+  }
+
+  .news .header {
+    margin-bottom: 0.5rem;
+  }
+
+  .teaser-text {
+    margin: 0 !important;
+  }
+
+  .news .footer {
+    border-top: 1px dashed $dark-gray !important;
+    padding-top: 1rem;
+    margin-top: 1rem !important;
+  }
+
+  .csc-textpic-imagecolumn {
+    margin: 0 !important;
+  }
+
+  .csc-textpic-image {
+    margin-bottom: 0 !important;
+  }
+}
+
+.join-us-now {
+  max-width: rem-calc(860);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.75rem 0;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed $black;
+
+    &::before {
+      @include breakpoint(medium up) {
+        content: url('/fileadmin/template/assets/images/signet_swr.png');
+        display: inline;
+        margin-right: rem-calc(16);
+        bottom: rem-calc(-10);
+        position: relative;
+      }
+    }
+  }
+}

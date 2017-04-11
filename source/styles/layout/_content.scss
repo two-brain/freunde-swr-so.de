@@ -1,0 +1,66 @@
+$page-padding_small: 1.5rem 0;
+$page-padding_medium: 1rem 0;
+$page-padding_large: 2.5rem 0;
+$page-margin: 1.75rem;
+
+.site-content .row {
+  background: $white;
+}
+
+.page-header {
+  border-bottom: 1px dashed $black;
+  padding: $page-padding_small;
+
+  @include breakpoint(medium up) {
+    padding: $page-padding_medium;
+  }
+
+  @include breakpoint(large up) {
+    padding: $page-padding_large;
+  }
+
+  @include breakpoint(xlarge up) {
+    margin-left: $page-margin;
+  }
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.page-content {
+  padding: $page-padding_small;
+
+  @include breakpoint(medium up) {
+    padding: $page-padding_medium;
+  }
+
+  @include breakpoint(large up) {
+    padding: $page-padding_large;
+  }
+
+  @include breakpoint(xlarge up) {
+    margin-left: $page-margin;
+    margin-bottom: $page-margin;
+  }
+}
+
+.page-sidebar {
+  @include breakpoint(xlarge up) {
+    margin-right: $page-margin;
+    margin-bottom: $page-margin;
+  }
+
+  a[href^="mailto"] {
+    color: $dark-gray;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  > div + div {
+    margin-top: 3rem;
+  }
+}

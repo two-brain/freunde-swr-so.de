@@ -1,0 +1,15 @@
+.PID-9 {
+  .powermail_form {
+    margin-top: 3rem;
+
+    fieldset {
+      padding: 1rem 2rem 0rem;
+      background: #f4f9fd;
+      border-left: 24px solid $primary-color;
+    }
+
+    [type="submit"] {
+      float: right;
+    }
+  }
+}

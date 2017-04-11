@@ -1,0 +1,27 @@
+// .page-content,
+// .page-sidebar {
+//   .csc-textpic-imagecolumn {
+//     margin: 0 !important;
+//   }
+//
+//   .csc-textpic-image {
+//     margin-bottom: 8px !important;
+//
+//     a {
+//       display: block;
+//       transition: opacity 200ms;
+//
+//       &:hover {
+//         opacity: 0.8;
+//       }
+//     }
+//   }
+// }
+
+.news p {
+  margin: 0 !important;
+}
+
+.news .footer {
+  border-top: 1px dashed $light-gray !important;
+}
