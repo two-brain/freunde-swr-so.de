@@ -4,9 +4,18 @@
  * Loading main js files
  */
 
-$('.powermail_fieldset legend').remove();
+ // Simple JS feature detection
+ var className, html;
+ html = document.documentElement;
+ className = html.className.replace('no-js', 'js');
+ html.className = className;
 
-$(document).foundation();
+ $(document).foundation();
+
+ $('table').addClass('stack');
+ $('.powermail_submit').addClass('button');
+ $('.powermail_fieldset legend').remove();
+
 
 
 

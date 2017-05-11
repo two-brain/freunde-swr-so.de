@@ -51,7 +51,7 @@ $global-width: rem-calc(1280);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #35a7e3,
-  secondary: #767676,
+  secondary: #d5db77,
   success: #99cc01,
   warning: #ffae00,
   alert: #cc4b37,
@@ -61,7 +61,7 @@ $medium-gray: #cacaca;
 $dark-gray: #666;
 $black: #0a0a0a;
 $white: #fefefe;
-$light-blue: #e9f2f9;
+$light-blue: #f4f9fd;
 $body-background: $white;
 $body-font-color: $dark-gray;
 $body-font-family: 'Source Sans Pro', Arial, sans-serif;
@@ -212,9 +212,9 @@ $accordion-content-padding: 1rem;
 // 8. Accordion Menu
 // -----------------
 
-$accordionmenu-arrows: false;
+$accordionmenu-arrows: true;
 $accordionmenu-arrow-color: $primary-color;
-$accordionmenu-arrow-size: 6px;
+$accordionmenu-arrow-size: 8px;
 
 // 9. Badge
 // --------
@@ -319,9 +319,9 @@ $closebutton-color-hover: $black;
 // 16. Drilldown
 // -------------
 
-$drilldown-transition: transform 0.15s linear;
+$drilldown-transition: transform 0.25s linear;
 $drilldown-arrows: true;
-$drilldown-arrow-color: $primary-color;
+$drilldown-arrow-color: $secondary-color;
 $drilldown-arrow-size: 6px;
 $drilldown-background: $white;
 
@@ -550,11 +550,11 @@ $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
 $table-is-striped: true;
-$table-striped-background: smart-scale($table-background, $table-color-scale);
+$table-striped-background: smart-scale($table-background, $table-color-scale / 2);
 $table-stripe: even;
-$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+$table-head-background: smart-scale($table-background, $table-color-scale);
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
-$table-foot-background: smart-scale($table-background, $table-color-scale);
+$table-foot-background: smart-scale($table-background, $table-color-scale / 2);
 $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
 $table-head-font-color: $body-font-color;
 $table-foot-font-color: $body-font-color;

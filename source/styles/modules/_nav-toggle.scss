@@ -1,0 +1,31 @@
+.nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $dropdownmenu-background;
+}
+
+@include breakpoint(medium up) {
+  .reveal ul.menu-centered {
+    margin-top: rem-calc(48);
+    font-size: rem-calc(24);
+  }
+}
+
+.reveal .is-accordion-submenu {
+  background: $light-blue;
+}
+
+#overlay-nav {
+  outline: 0;
+
+  a {
+    color: $dark-gray;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .is-accordion-submenu a {
+      font-weight: 400 !important;
+  }
+}
