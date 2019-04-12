@@ -1,2 +1,3 @@
-*.log
-build
+/yarn.lock
+/build
+/bower_components
